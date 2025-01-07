@@ -171,6 +171,35 @@ margin: auto;
 .nav-links ul li:hover::after{
 width:100%;
 },
+section {
+    padding: 60px 0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f8f9fa;
+}
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+.project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.project-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #6c757d;
+},
 ul {
   padding-left: 2rem;
 }
