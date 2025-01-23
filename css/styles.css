@@ -238,6 +238,35 @@ ul {
 html {
     scroll-behavior: smooth;
 },
+#project1 {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#project1 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#project1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#project1 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#project1 p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+},
 #gallery {
     padding: 50px 0;
     background-color: #f8f9fa;
