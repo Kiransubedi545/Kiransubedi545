@@ -347,22 +347,28 @@ The analysis design and detailing of all structural members is required to compl
             </div>
 
             <!-- Contact Form -->
-            <div class="col-md-6">
-                <h3>Contact Form</h3>
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Full Name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email Address" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Message" class="form-control" rows="5" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <!-- reCAPTCHA -->
-                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-                    </div>
+<div class="col-md-6">
+    <h3>Contact Form</h3>
+    <form action="contact.php" method="POST" class="contact-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Full Name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email Address" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Message" class="form-control" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+
+<!-- Add reCAPTCHA script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
