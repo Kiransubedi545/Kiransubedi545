@@ -193,6 +193,17 @@ section {
     text-align: justify;
     margin-bottom: 15px;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 html {
     scroll-behavior: smooth;
 }
