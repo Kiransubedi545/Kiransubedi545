@@ -498,6 +498,56 @@ html {
     color: #555;
     margin-top: 10px;
 },
+.contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 20px 0;
+    color: #555;
+}
+
+.contact-info i {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form .btn-primary {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #d35400;
+},
 ol,
 ul,
 dl {
