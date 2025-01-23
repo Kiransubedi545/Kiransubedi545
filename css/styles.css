@@ -238,6 +238,35 @@ ul {
 html {
     scroll-behavior: smooth;
 },
+#gallery {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#gallery h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#gallery p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+},
 ol,
 ul,
 dl {
