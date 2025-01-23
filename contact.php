@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recaptchaSecret = '6Lc1hMEqAAAAACDbboh38BmK9q7cBo3fvmnXjgrs';
+    $recaptchaSecret = '6LcshcEqAAAAACHsZ0_jgqt_f0mKVaxIdf2GDAgi';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     $url = "https://www.google.com/recaptcha/api/siteverify";
