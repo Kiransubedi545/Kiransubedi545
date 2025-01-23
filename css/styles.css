@@ -207,6 +207,22 @@ img {
 html {
     scroll-behavior: smooth;
 }
+/* Increase the image size for desktop screens */
+.about-image {
+    width: 250px; /* Default width */
+    height: 250px; /* Default height */
+    border-radius: 50%; /* Ensures the image remains circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Larger size for desktop screens */
+@media (min-width: 992px) {
+    .about-image {
+        width: 350px; /* Larger width for desktops */
+        height: 350px; /* Larger height for desktops */
+    }
+}
 /* Projects Section */
 #projects {
     background-color: #f8f9fa; /* Light Bootstrap color */
