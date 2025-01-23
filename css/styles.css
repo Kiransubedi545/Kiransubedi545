@@ -174,7 +174,28 @@ width:100%;
 section {
     padding: 60px 0;
 }
+#about {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
 
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
 /* Projects Section */
 #projects {
     background-color: #f8f9fa; /* Light Bootstrap color */
