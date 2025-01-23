@@ -235,7 +235,9 @@ section {
 ul {
   padding-left: 2rem;
 }
-
+html {
+    scroll-behavior: smooth;
+},
 ol,
 ul,
 dl {
