@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate reCAPTCHA
-    $recaptchaSecret = 'YOUR_RECAPTCHA_SECRET_KEY';
+    $recaptchaSecret = '6LcGfMEqAAAAAEP_EyyLtMC7G65LD1q6Nr9XRex8';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
     $recaptchaUrl = "https://www.google.com/recaptcha/api/siteverify";
 
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email details
-    $to = "your-email@example.com"; // Replace with your email
+    $to = "kiransubedi545@gmail.com"; // Replace with your email
     $subject = "New Contact Form Submission";
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
