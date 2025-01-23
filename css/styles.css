@@ -129,7 +129,114 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Ensure content spans the entire desktop width */
+.container {
+    max-width: 1200px; /* Adjust maximum width */
+    margin: 0 auto; /* Center the container on larger screens */
+    padding: 15px;
+}
+
+/* Typography settings for better desktop view */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem; /* Slightly larger font size for desktop */
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust grid layout for desktop */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-4 {
+    flex: 0 0 30%; /* Make columns occupy 30% of the row on desktop */
+    max-width: 30%;
+}
+
+/* For smaller screens */
+@media (max-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 48%; /* Adjust to two columns on smaller devices */
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%; /* Stack columns on mobile */
+        max-width: 100%;
+    }
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+2. Ensure Proper Bootstrap Classes Are Used
+If you're using Bootstrap, ensure all sections include the correct classes for desktop views. For example:
+
+Example for a Grid Layout:
+html
+Copy
+Edit
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Column 1</h3>
+            <p>Content for the first column.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Column 2</h3>
+            <p>Content for the second column.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Column 3</h3>
+            <p>Content for the third column.</p>
+        </div>
+    </div>
+</div>
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
