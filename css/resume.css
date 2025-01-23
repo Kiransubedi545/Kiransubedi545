@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+$lightest-gray: #f9f9f9;
+$lighter-gray: #f4f4f4;
+$light-gray: #eaeaea;
+$white: #ffffff;
+$black: #333333;
+$primary-blue: #007bff;
+$secondary-blue: #0056b3;
+$orange: #ffa500;
+$yellow: #ffc107;
+$soft-green: #28a745;
+$light-blue: #d9edf7;
+
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: $lightest-gray;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-blue;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: $secondary-blue;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resume {
+  width: 100%;
+  max-width: 1200px;
+  background: $white;
+  color: $black;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resume .base,
+.resume .func {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.resume .base {
+  flex: 1 1 30%;
+  background: $light-gray;
+  border-right: 1px solid $lighter-gray;
+}
+
+.resume .func {
+  flex: 1 1 70%;
+  background: $white;
+}
+
+.resume .profile {
+  text-align: center;
+  padding: 20px 10px;
+  background: $primary-blue;
+  color: $white;
+  border-radius: 8px;
+}
+
+.resume .profile .photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.resume .profile .info .name {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.resume .profile .info .job {
+  font-size: 1.2rem;
+}
+
+.resume .about {
+  margin-top: 20px;
+}
+
+.resume .about h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: $primary-blue;
+}
+
+.resume .about p {
+  font-size: 1rem;
+  color: $black;
+}
+
+.resume .contact h3,
+.resume .follow h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: $primary-blue;
+}
+
+.resume .contact div a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $black;
+}
+
+.resume .contact div a i {
+  color: $primary-blue;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.resume .contact div a:hover i {
+  color: $secondary-blue;
+}
+
+.resume .func h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: $primary-blue;
+}
+
+.resume .func .work ul,
+.resume .func .edu ul {
+  margin-left: 20px;
+}
+
+.resume .func .work ul li,
+.resume .func .edu ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  color: $black;
+}
+
+.resume .func .work ul li::before,
+.resume .func .edu ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $primary-blue;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.resume .skills-prog ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.resume .skills-prog ul li span {
+  flex: 1;
+  font-size: 1rem;
+  color: $black;
+}
+
+.resume .skills-prog ul li .skills-bar {
+  width: 70%;
+  height: 6px;
+  background: $light-gray;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.resume .skills-prog ul li .skills-bar .bar {
+  width: 80%; /* Adjust percentage for skill levels */
+  height: 100%;
+  background: $primary-blue;
+}
+
+.resume .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .skills-soft ul li {
+  text-align: center;
+  width: 22%;
+}
+
+.resume .skills-soft ul li span {
+  margin-top: 10px;
+  display: block;
+  color: $primary-blue;
+}
+
+.resume .interests {
+  padding: 20px;
+  margin-top: 20px;
+  background: $light-gray;
+  border-radius: 5px;
+}
+
+.resume .interests .interests-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.resume .interests .interests-items div {
+  text-align: center;
+}
+
+.resume .interests .interests-items div i {
+  font-size: 2rem;
+  color: $primary-blue;
+  margin-bottom: 5px;
+}
+
+.resume .interests .interests-items div span {
+  font-size: 1rem;
+  color: $black;
+}
