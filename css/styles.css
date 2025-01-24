@@ -334,12 +334,15 @@ html {
 #projects {
     background-color: #f8f9fa; /* Light Bootstrap color */
     padding: 50px 0;
+    width: 100%; /* Ensure full-width */
+    margin: 0; /* Remove any margin */
 }
 
 #projects .section-heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .project-card {
