@@ -11,3 +11,7 @@ curl -X POST "https://recaptchaenterprise.googleapis.com/v1/projects/cloudfare-1
      -H "Authorization: Bearer API_KEY" \
      -d @request.json
 }
+{
+"annotation": "ANNOTATION_LABEL"
+"reasons": "ANNOTATION_REASON"
+}
