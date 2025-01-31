@@ -5,3 +5,7 @@
     "siteKey": "6LcGfMEqAAAAAB5t-dqgGHF9G3BTg_6xVRFjVNGi",
   }
 }
+curl -X POST "https://recaptchaenterprise.googleapis.com/v1/projects/cloudfare-1737669594587/assessments?key=API_KEY" \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer API_KEY" \
+     -d @request.json
