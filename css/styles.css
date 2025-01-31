@@ -326,8 +326,8 @@ html {
 /* Larger size for desktop screens */
 @media (min-width: 992px) {
     .about-image {
-        width: 350px; /* Larger width for desktops */
-        height: 350px; /* Larger height for desktops */
+        width: 250px; /* Larger width for desktops */
+        height: 250px; /* Larger height for desktops */
     }
 }
 /* Projects Section */
@@ -398,6 +398,7 @@ html {
 },
 #project1 {
     padding: 50px 0;
+    width: 100%; /* Ensure full-width */
     background-color: #f8f9fa;
 }
 
@@ -474,6 +475,7 @@ html {
 },
 #gallery {
     padding: 50px 0;
+    width: 100%; /* Ensure full-width */
     background-color: #f8f9fa;
 }
 
