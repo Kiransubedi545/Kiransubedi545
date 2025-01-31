@@ -352,6 +352,7 @@ html {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add margin for spacing between cards */
 }
 
 .project-card img {
@@ -374,12 +375,13 @@ html {
 }
 
 .project-card a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add margin for spacing between cards */
 }
 
 .project-card a:hover {
@@ -424,6 +426,7 @@ html {
 #project1 p {
     font-size: 0.9rem;
     color: #555;
+    text-align: justify;
     margin-top: 10px;
 },
 .project-card img {
@@ -448,12 +451,13 @@ html {
 }
 
 .project-card a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Add margin for spacing between cards */
 }
 
 .project-card a:hover {
@@ -488,9 +492,10 @@ html {
 #gallery img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    border-radius: 8px;
 }
 
 #gallery img:hover {
