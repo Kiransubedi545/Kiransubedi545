@@ -163,33 +163,6 @@ img {
     height: auto;
 }
 
-/* Adjust grid layout for desktop */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.col-md-4 {
-    flex: 0 0 30%; /* Make columns occupy 30% of the row on desktop */
-    max-width: 30%;
-}
-
-/* For smaller screens */
-@media (max-width: 992px) {
-    .col-md-4 {
-        flex: 0 0 48%; /* Adjust to two columns on smaller devices */
-        max-width: 48%;
-    }
-}
-
-@media (max-width: 768px) {
-    .col-md-4 {
-        flex: 0 0 100%; /* Stack columns on mobile */
-        max-width: 100%;
-    }
-}
-
 /* Navigation Menu Styling */
 nav ul {
     display: flex;
