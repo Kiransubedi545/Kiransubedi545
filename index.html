@@ -366,7 +366,14 @@ The analysis design and detailing of all structural members is required to compl
     data-action='submit'>
   Submit
 </button>
-  
+  <script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lc1hMEqAAAAABH4AGTnUuvEq_ekKpMdczYyQSO8', {action: 'LOGIN'});
+    });
+  }
+</script>
 </script>
 	</div>
         </div>
