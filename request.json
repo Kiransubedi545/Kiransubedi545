@@ -6,7 +6,7 @@
   }
 }
 {
-curl -X POST "https://recaptchaenterprise.googleapis.com/v1/projects/cloudfare-1737669594587/assessments?key=API_KEY" \
+https://recaptchaenterprise.googleapis.com/v1/projects/cloudfare-1737671343305/assessments?key=API_KEY
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer API_KEY" \
      -d @request.json
