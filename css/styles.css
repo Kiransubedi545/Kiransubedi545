@@ -187,13 +187,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
-2. Ensure Proper Bootstrap Classes Are Used
-If you're using Bootstrap, ensure all sections include the correct classes for desktop views. For example:
-
-Example for a Grid Layout:
-html
-Copy
-Edit
 <div class="container">
     <div class="row">
         <div class="col-md-4">
