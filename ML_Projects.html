@@ -23,7 +23,14 @@
   <div class="project-block">
     <h2>🧱 Concrete Compressive Strength Predictor</h2>
     <p>This tool estimates concrete compressive strength based on user-defined mix proportions using a LightGBM model.
-    Please click below for Prediction</p>
+      🔍 Why LightGBM?
+            This tool uses a LightGBM model selected after benchmarking 12 machine learning algorithms. LightGBM achieved the highest R² (0.9126) and lowest RMSE (4.747 MPa), outperforming models like Random Forest, XGBoost, and Neural Networks.
+            Its selection is based on:
+              🌿 Superior handling of nonlinear feature interactions
+              ⚡ Fast training with large tabular data
+              🎯 Excellent generalization on unseen data
+            LightGBM's balance of accuracy, speed, and interpretability makes it ideal for predicting concrete compressive strength.
+      Please click below for Prediction</p>
     <iframe 
       src="https://concrete-compressive-strength.streamlit.app/#9627bd0"
       width="100%" height="200" style="border:1px solid #ddd; border-radius:10px;"></iframe>
