@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      .bg-slider {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .bg-slider img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.4) blur(4px);
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+      }
+      .bg-slider img.active {
+        opacity: 1;
+      }
+    </style>
+</head>
+<body>
+  <div class="bg-slider">
+    <img src="Highway.png" class="active" alt="Highway Background">
+    <img src="Bridges.jpg" alt="Bridge Background">
+  </div>
+
+  <section id="about" class="bg-light text-center py-5">
+    <div class="container">
+      <h2 class="section-heading text-uppercase text-secondary mb-4">About Me</h2>
+      <img src="Surveying.jpg" alt="During Surveying" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;">
+      <p class="text-muted">
+        I am a civil engineer with a passion for solving complex engineering challenges through data-driven insights and cutting-edge technologies. My extensive hands-on experience spans a wide range of research projects, from pavement engineering to infrastructure risk management, where I have developed a strong foundation in combining technical expertise with innovative solutions. I specialize in applying programming, machine learning, signal processing, and advanced data analytics to improve civil infrastructure systems, contributing to enhanced efficiency, safety, and sustainability.
+      </p>
+      <p class="text-muted">
+        Throughout my career, I’ve worked on diverse projects, including road condition monitoring, pavement analysis, and structural health monitoring. I leverage advanced algorithms, big data analytics, and custom hardware systems to solve real-world problems, ensuring optimal performance and longevity of infrastructure. My tenure at the Department of Roads, Government of Nepal (2015-2024), provided me with significant experience in road and bridge construction, geotechnical investigations, and risk management. I was involved in the successful upgrading of national highways, local road networks, and bridges, where I applied my skills in risk assessment and management, construction monitoring, quality control, and bid evaluation to ensure quality and safety at every stage of the project. My technical expertise includes pavement design, surface dressing, slurry seal, semi-grout applications, and geotechnical engineering techniques such as slope stabilization, embankment construction, and sub-grade preparation. I am experienced in conducting geotechnical investigations and laboratory testing (including AIV, ACV, Proctor Compaction, and Field Density Assessments), as well as applying non-destructive testing (NDT) methods such as the Rebound Hammer and Pile Integrity tests. I have a strong focus on structural works, including road and bridge construction, shallow and deep foundation works, retaining walls, and geo-textile applications. My ability to manage complex construction projects while ensuring safety and adherence to quality standards has been a key strength in delivering impactful infrastructure solutions.
+      </p>
+      <p class="text-muted">
+        Beyond my technical skills, I am motivated by curiosity and a drive to find creative, efficient solutions. I thrive on bridging the gap between traditional civil engineering and digital innovation. As a data science enthusiast, I focus on integrating advanced technologies into infrastructure systems to enhance their resilience and sustainability. With expertise in software tools such as QGIS, SW-Road, SW-DTM, AUTOCAD, SAP-2000, and statistical tools like SPSS and Python, I am committed to leveraging modern technologies for smarter infrastructure development. Holding a strong academic background in Civil Engineering and Construction Management from Pokhara University, Nepal, I am dedicated to continuous learning and growth. By combining creativity, collaboration, and a results-oriented mindset, I aim to push the boundaries of civil engineering, contributing to the development of smarter, more resilient infrastructure systems.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    const images = document.querySelectorAll('.bg-slider img');
+    let current = 0;
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 60000);
+  </script>
+</body>
+</html>
