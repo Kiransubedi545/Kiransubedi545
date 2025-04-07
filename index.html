@@ -68,13 +68,14 @@
   <div class="container-fluid">
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
-    <!-- Horizontal Slider -->
-    <div id="projectSlider" class="carousel slide mt-4" data-bs-ride="carousel">
+    <!-- Manual and Auto Changing Slider for Projects (showing 3 cards per slide) -->
+    <div id="projectSlider" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="5000">
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
+          <div class="d-flex justify-content-center flex-wrap">
+            <!-- ML Projects -->
+            <div class="card m-2" style="width: 320px;">
               <div class="card-body">
                 <h2 class="section-heading text-uppercase text-secondary mb-4">💻 Machine Learning Projects and Application Development</h2>
                 <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
@@ -82,12 +83,8 @@
                 <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
+            <!-- COVID-19 Impact -->
+            <div class="card m-2" style="width: 320px;">
               <img src="project2.jpg" class="card-img-top" alt="Project 1">
               <div class="card-body">
                 <h2>Impact of COVID-19 Pandemic on Road and Bridge Projects under Road Division Pokhara.</h2>
@@ -95,12 +92,8 @@
                 <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
+            <!-- Seismic Analysis -->
+            <div class="card m-2" style="width: 320px;">
               <img src="project1.jpg" class="card-img-top" alt="Project 2">
               <div class="card-body">
                 <h2>Seismic Analysis and Design of Earthquake Resistance Structural Building</h2>
@@ -131,8 +124,9 @@
         </div>
 
         <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
+          <div class="d-flex justify-content-center flex-wrap">
+            <!-- Smart Pavements -->
+            <div class="card m-2" style="width: 320px;">
               <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
               <div class="card-body">
                 <h2>Transforming Road Infrastructure: The Rise of Smart Pavements 🌍</h2>
@@ -140,12 +134,8 @@
                 <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
+            <!-- Chicago Crash Data -->
+            <div class="card m-2" style="width: 320px;">
               <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
               <div class="card-body">
                 <h2>Chicago Crash Data Analysis</h2>
@@ -153,13 +143,9 @@
                 <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 320px;">
-              <img src="project.jpg" class="card-img-top" alt="Future Project ">
+            <!-- Ongoing Projects -->
+            <div class="card m-2" style="width: 320px;">
+              <img src="project.jpg" class="card-img-top" alt="Future Project">
               <div class="card-body">
                 <h2>Ongoing Projects....</h2>
                 <p>Projects are coming soon...........</p>
@@ -180,112 +166,61 @@
     </div>
   </div>
 </section>
+
+<!-- Gallery Section Slider -->
 <section id="gallery" class="bg-light text-center py-5">
-    <div class="container">
-        <h2 class="section-heading text-uppercase text-secondary mb-0">Gallery</h2>
-        <p class="text-muted mb-5">A collection of Photograph During Work Execution and Some Problems in Site.</p>
-        <div class="row">
-        <!--- Image Grid --->
-            <div class="col-md-4 mb-4">
-                <img src="CUBE.jpg" alt="CUBE" class="img-fluid rounded shadow">
-                <p class="mt-2">CUBE Testing</p>
+  <div class="container-fluid">
+    <h2 class="section-heading text-uppercase text-secondary mb-0">Gallery</h2>
+    <p class="text-muted mb-4">A collection of Photograph During Work Execution and Some Problems in Site.</p>
+
+    <div id="gallerySlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-3">
+            <div class="text-center">
+              <img src="CUBE.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">CUBE Testing</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="DCPT.jpg" alt="DCPT" class="img-fluid rounded shadow">
-                <p class="mt-2">Dynamic Cone Penetration Testing</p>
+            <div class="text-center">
+              <img src="DCPT.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">Dynamic Cone Penetration Testing</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="Str.jpg" alt="Drawings" class="img-fluid rounded shadow">
-                <p class="mt-2">Structural Drawings</p>
+            <div class="text-center">
+              <img src="Str.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">Structural Drawings</p>
             </div>
-            <div class="col-md-4 mb-4">
-                <img src="Equipment.jpg" alt="Equipment" class="img-fluid rounded shadow">
-                <p class="mt-2">Equipment Used</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Rebar.jpg" alt="Rebar" class="img-fluid rounded shadow">
-                <p class="mt-2">Rebar Details</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="aggregate.jpg" alt="Aggregate" class="img-fluid rounded shadow">
-                <p class="mt-2">Aggregate Testing</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="const.jpg" alt="Construction" class="img-fluid rounded shadow">
-                <p class="mt-2">Construction Process</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="density.jpg" alt="Density" class="img-fluid rounded shadow">
-                <p class="mt-2">Density Testing</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="gab.jpg" alt="Gabion Work" class="img-fluid rounded shadow">
-                <p class="mt-2">Gabion Work</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="gabion.jpg" alt="Gabion Wall" class="img-fluid rounded shadow">
-                <p class="mt-2">Gabion Wall</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="pav.jpg" alt="Pavement" class="img-fluid rounded shadow">
-                <p class="mt-2">Pavement Design</p>
-            </div>
-		<div class="col-md-4 mb-4">
-                <img src="Rigid Pavement.jpg" alt="Rigid Pavement" class="img-fluid rounded shadow">
-                <p class="mt-2">Rigid Pavement</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="pile load.jpg" alt="Pile Load Test" class="img-fluid rounded shadow">
-                <p class="mt-2">Pile Load Test</p>
-            </div>
-		<!-- Add your new images here -->
-            <div class="col-md-4 mb-4">
-                <img src="Abutment.jpg" alt="Abutment Failure" class="img-fluid rounded shadow">
-                <p class="mt-2">Abutment Failure</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Raft.jpg" alt="Rock mass in Raft Foundation" class="img-fluid rounded shadow">
-                <p class="mt-2">Rock mass in Raft Foundation</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Expansion Joint.jpg" alt="Expansion Joint" class="img-fluid rounded shadow">
-                <p class="mt-2">Expansion Joint</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Toe erosion.jpg" alt="Toe Erosion in Abutment" class="img-fluid rounded shadow">
-                <p class="mt-2">Toe Erosion in Abutment</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Pile Load.jpg" alt="Pile Load Testing" class="img-fluid rounded shadow">
-                <p class="mt-2">Pile Load Testing</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Pavement failure.jpg" alt="Pavement Failure in Siddhartha Highway" class="img-fluid rounded shadow">
-                <p class="mt-2">Pavement Failure in Siddhartha Highway</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Embankment settlement.jpg" alt="Embankment Settlement" class="img-fluid rounded shadow">
-                <p class="mt-2">Embankment Settlement</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="Landslide.jpg" alt="Landslide" class="img-fluid rounded shadow">
-                <p class="mt-2">Landslide</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="schidmth hammer.jpg" alt="Schmidt Hammer" class="img-fluid rounded shadow">
-                <p class="mt-2">Schmidt Hammer</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="sieve analysis.jpg" alt="Sieve Analysis" class="img-fluid rounded shadow">
-                <p class="mt-2">Sieve Analysis</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img src="str.jpg" alt="Structure" class="img-fluid rounded shadow">
-                <p class="mt-2">Structural Work</p>
-            </div>
+          </div>
         </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-3">
+            <div class="text-center">
+              <img src="Equipment.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">Equipment Used</p>
+            </div>
+            <div class="text-center">
+              <img src="Rebar.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">Rebar Details</p>
+            </div>
+            <div class="text-center">
+              <img src="aggregate.jpg" class="img-thumbnail" style="width: 200px;">
+              <p class="mt-2">Aggregate Testing</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel-items with 3 images per slide as needed -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gallerySlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gallerySlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+  </div>
 </section>
+
 	    <section id="contact" class="contact-section">
     <div class="container">
         <h2 class="section-heading text-uppercase text-secondary mb-4">Contact</h2>
