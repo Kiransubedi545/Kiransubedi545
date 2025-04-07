@@ -26,6 +26,11 @@
     .btn-primary {
       font-size: 1rem;
     }
+    .img-fix {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
@@ -50,19 +55,19 @@
       <h4 class="text-secondary mb-4">Visual Analysis from Crash Data</h4>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4">
         <div class="col text-center">
-          <img src="Crash Heatmapping data.png" class="img-fluid img-thumbnail" alt="Crash Heatmapping data">
+          <img src="Crash Heatmapping data.png" class="img-fluid img-thumbnail img-fix" alt="Crash Heatmapping data">
           <p class="mt-2">Crash Density Heatmap</p>
         </div>
         <div class="col text-center">
-          <img src="Crash Frequent types.png" class="img-fluid img-thumbnail" alt="Crash Frequent types">
+          <img src="Crash Frequent types.png" class="img-fluid img-thumbnail img-fix" alt="Crash Frequent types">
           <p class="mt-2">Frequent Crash Types</p>
         </div>
         <div class="col text-center">
-          <img src="Crash by month.png" class="img-fluid img-thumbnail" alt="Crash by month">
+          <img src="Crash by month.png" class="img-fluid img-thumbnail img-fix" alt="Crash by month">
           <p class="mt-2">Crashes by Month</p>
         </div>
         <div class="col text-center">
-          <img src="Crash Due to weather condition.png" class="img-fluid img-thumbnail" alt="Crash Due to Weather">
+          <img src="Crash Due to weather condition.png" class="img-fluid img-thumbnail img-fix" alt="Crash Due to Weather">
           <p class="mt-2">Weather-Related Crashes</p>
         </div>
       </div>
