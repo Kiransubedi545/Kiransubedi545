@@ -62,7 +62,7 @@
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
     <!-- Carousel -->
-    <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+    <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-wrap="true" data-bs-interval="false">
       <div class="carousel-inner">
 
         <!-- First Slide -->
@@ -92,12 +92,12 @@
             <!-- Seismic Analysis Card with Modal -->
             <div class="card" style="width: 320px;">
               <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Seismic analysis of earthquake-resistant building</h2>
+                <h2 class="section-heading text-secondary mb-3" style="font-size: 18px;">Seismic analysis of earthquake-resistant building</h2>
                 <p>Structural analysis and seismic design using SAP2000. Learn about joint behavior and reinforcement requirements...</p>
                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#seismicModal">📖 Read More</button>
               </div>
               <!-- Mini Image Carousel moved below description -->
-              <div id="seismicCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div id="seismicCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
                 <div class="carousel-inner">
                   <div class="carousel-item active"><img src="1.bmp" class="d-block w-100" alt="Seismic Image 1"></div>
                   <div class="carousel-item"><img src="2.bmp" class="d-block w-100" alt="Seismic Image 2"></div>
@@ -177,28 +177,9 @@
   </div>
 </section>
 
-<!-- Modal for Seismic Description -->
-<div class="modal fade" id="seismicModal" tabindex="-1" aria-labelledby="seismicModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="seismicModalLabel">Seismic Analysis and Design Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-start">
-        <p>This project work was intended to learn the structural analysis and seismic resistant design of Residential building. It was mainly based on the structural analysis using SAP-2000 and manual design of structural elements for the analysis using different design codes as per requirement.</p>
-        <p>In the analysis, the negative moment in beam was greater than the positive moment. Under-reinforced design led to high top reinforcement near joints due to seismic load considerations. Column criticality was studied for periphery vs. central portions under different loading conditions.</p>
-        <p>The demand of reinforcement reduces along with increasing storey height. Limitations: only critical members are shown in detail.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- MODALS UPDATED WITH FULL DESCRIPTIONS -->
 
-<!-- Modal for COVID Description -->
+<!-- COVID Modal Full Description -->
 <div class="modal fade" id="covidModal" tabindex="-1" aria-labelledby="covidModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -207,7 +188,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-start">
-        <p>COVID-19 is a global pandemic that has caused social disruption and altered the global economic perspective. The construction sector plays an essential role in the worldwide economy, drawing upon a diverse array of resources within regional economies...</p>
+        <p>COVID-19 is a global pandemic that has caused social disruption and altered the global economic perspective. The construction sector plays an essential role in the worldwide economy, drawing upon a diverse array of resources within regional economies. Since the COVID-19 outburst in Nepal, it has been a really difficult task for the construction sector to initiate a project or to continue running at a normal pace.</p>
+        <p>The objective of this research was to determine the impact of COVID-19 on the road and bridge project under the road division Pokhara. About 52 respondents comprised contractors and client/consulting agencies at different structure questionnaires compatible with the requirement of the study were recorded. As a result, the eight most important factors were ranked based on the severity of the effect and prioritization of multiple factors on the project due to the pandemic.</p>
+        <p>Obtained responses from consultant and contractor representatives, it was found that the factors beyond the control of projects, transportation shutdown were ranked first followed by the shortage of labor under manpower factor and others. This paper observes the actual severity of the various factors regarding construction projects due to the coronavirus and will also lead to better management in upcoming pandemics.</p>
+        <p>The results of this study establish the groundwork for future researchers and practitioners by offering suggestions for how to prioritize and re-organize work plans, workplace management, and strategies for unforeseen circumstances.</p>
       </div>
       <div class="modal-footer">
         <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
@@ -217,7 +201,7 @@
   </div>
 </div>
 
-<!-- Modal for Pavement Description -->
+<!-- Pavement Modal Full Description -->
 <div class="modal fade" id="pavementModal" tabindex="-1" aria-labelledby="pavementModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -226,7 +210,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-start">
-        <p>The evolution of road infrastructure is increasingly driven by the need for sustainability, resilience, and intelligent systems. This study explores the transformative shift from traditional flexible pavements to advanced smart pavement technologies...</p>
+        <p>The evolution of road infrastructure is increasingly driven by the need for sustainability, resilience, and intelligent systems. This study explores the transformative shift from traditional flexible pavements to advanced smart pavement technologies.</p>
+        <p>It provides a comparative analysis of Hot-Mix Asphalt (HMA), Warm-Mix Asphalt (WMA), and Cold-Mix Asphalt (CMA), highlighting their environmental impacts, application conditions, and structural performance. Innovations such as bio-binders and recycled materials are examined for their potential in enhancing bitumen properties and reducing ecological footprints.</p>
+        <p>Furthermore, alternative pavement types like inverted pavements and Interlocking Concrete Block Pavements (ICBP) are discussed for their structural benefits and adaptability to urban environments. The core focus lies on smart pavements, including self-healing asphalt and concrete, energy-harvesting surfaces, and sensor-integrated structures that enable real-time data interaction and proactive maintenance.</p>
+        <p>Challenges related to durability, cost, and implementation of these technologies are also considered. The paper concludes by emphasizing the importance of interdisciplinary collaboration in advancing smart pavement systems to meet future transportation demands sustainably and intelligently.</p>
       </div>
       <div class="modal-footer">
         <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
@@ -236,7 +223,7 @@
   </div>
 </div>
 
-<!-- Modal for Crash Analysis -->
+<!-- Crash Modal Full Description -->
 <div class="modal fade" id="crashModal" tabindex="-1" aria-labelledby="crashModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -245,7 +232,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-start">
-        <p>In 2024, over 900,000 traffic crashes in Chicago were analyzed using CPD data and Python-based tools to uncover key trends and safety challenges...</p>
+        <p>In 2024, over 900,000 traffic crashes in Chicago were analyzed using CPD data and Python-based tools to uncover key trends and safety challenges. Notably, more than 700,000 crashes occurred under clear weather, highlighting the dominant role of driver behavior, infrastructure, and traffic volume over adverse weather.</p>
+        <p>Crashes peaked in October, especially between 3–5 PM, with parked vehicle collisions and rear-end crashes being most common. Vulnerable road users like pedestrians and cyclists faced higher injury risks, and over half the crashes occurred in areas lacking traffic controls.</p>
+        <p>The study emphasizes the need for targeted interventions, improved traffic management, and better data reporting to enhance road safety citywide.</p>
       </div>
       <div class="modal-footer">
         <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
