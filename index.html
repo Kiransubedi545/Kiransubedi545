@@ -62,14 +62,20 @@
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
     <!-- Carousel -->
-    <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-interval="10000" data-bs-touch="true" data-bs-pause="hover">
+    <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade"
+         data-bs-ride="carousel"
+         data-bs-interval="10000"
+         data-bs-touch="true"
+         data-bs-pause="hover"
+         data-bs-wrap="true">
+
       <div class="carousel-inner">
 
         <!-- First Slide -->
         <div class="carousel-item active">
-          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
+          <div class="d-flex justify-content-center flex-wrap gap-3">
 
-            <!-- ML Projects Card -->
+            <!-- ML Projects -->
             <div class="card" style="width: 320px;">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
@@ -79,35 +85,35 @@
               </div>
             </div>
 
-            <!-- COVID Impact Card -->
+            <!-- COVID-19 Impact -->
             <div class="card" style="width: 320px;">
               <img src="project2.jpg" class="card-img-top" alt="Impact analysis">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 on road and bridge projects</h2>
-                <p>This study analyzes COVID-19’s impact on road and bridge projects under Road Division Pokhara. Major issues included labor shortages, transportation shutdowns, and supply chain disruptions.</p>
+                <p>This study analyzes the pandemic’s impact on road and bridge projects under Road Division Pokhara.</p>
                 <a href="https://kiransubedi545.github.io/Covid.html" target="_blank" class="btn btn-outline-primary">📖 Read More</a>
               </div>
             </div>
 
-            <!-- Seismic Analysis Card -->
+            <!-- Seismic Project -->
             <div class="card" style="width: 320px;">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Seismic analysis of earthquake-resistant building</h2>
-                <p>Structural analysis and seismic design using SAP2000. Learn about joint behavior and reinforcement requirements...</p>
+                <p>Structural and seismic design using SAP2000. Explore moment distribution and reinforcement detailing insights.</p>
                 <a href="https://kiransubedi545.github.io/Seismic%20Analysis.html" target="_blank" class="btn btn-outline-primary">📖 Read More</a>
               </div>
-              <div id="seismicCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+              <div id="seismicCarousel" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="4000">
                 <div class="carousel-inner">
-                  <div class="carousel-item active"><img src="1.bmp" class="d-block w-100" alt="Seismic Image 1"></div>
-                  <!-- You can add other images here as needed -->
-                  <div class="carousel-item"><img src="12.bmp" class="d-block w-100" alt="Seismic Image 12"></div>
+                  <div class="carousel-item active"><img src="1.bmp" class="d-block w-100" alt="Seismic 1"></div>
+                  <div class="carousel-item"><img src="2.bmp" class="d-block w-100" alt="Seismic 2"></div>
+                  <div class="carousel-item"><img src="3.bmp" class="d-block w-100" alt="Seismic 3"></div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#seismicCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#seismicCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
@@ -118,29 +124,29 @@
 
         <!-- Second Slide -->
         <div class="carousel-item">
-          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
+          <div class="d-flex justify-content-center flex-wrap gap-3">
 
-            <!-- Smart Pavements Card -->
+            <!-- Smart Pavement -->
             <div class="card" style="width: 320px;">
               <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: Smart pavements 🌍</h2>
-                <p>From HMA to self-healing asphalt, this project explores sustainable and tech-driven road solutions...</p>
+                <p>From HMA to self-healing asphalt, this project explores sustainable and tech-driven road solutions.</p>
                 <a href="https://kiransubedi545.github.io/Pavement.html" target="_blank" class="btn btn-outline-primary">📖 Read More</a>
               </div>
             </div>
 
-            <!-- Crash Data Analysis Card -->
+            <!-- Crash Data -->
             <div class="card" style="width: 320px;">
               <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
-                <p>Uncovering insights from 900k+ crashes using Python: timing, weather, and control deficiencies...</p>
+                <p>Uncovering insights from 900k+ crashes using Python: timing, weather, and control deficiencies.</p>
                 <a href="https://kiransubedi545.github.io/Crash%20Analysis.html" target="_blank" class="btn btn-outline-primary">📖 Read More</a>
               </div>
             </div>
 
-            <!-- Ongoing Projects -->
+            <!-- Coming Soon -->
             <div class="card" style="width: 320px;">
               <img src="project.jpg" class="card-img-top" alt="Coming Project">
               <div class="card-body">
@@ -153,7 +159,7 @@
         </div>
       </div>
 
-      <!-- Manual Controls -->
+      <!-- Carousel Navigation -->
       <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
