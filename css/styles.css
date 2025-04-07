@@ -420,7 +420,45 @@ html {
     background-color: #0056b3;
     color: white;
 }
+{
+/* Smooth scrolling for internal anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
 
+/* Smooth fade effect for carousel transitions */
+.carousel-item {
+  transition: opacity 1s ease-in-out;
+}
+
+/* Optional: Enable smooth movement for inner carousel content (if scrolling layout is used) */
+.carousel-inner {
+  scroll-behavior: smooth;
+}
+
+/* Fix carousel controls to be more accessible and visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Optional: Add top margin offset if navbar is fixed */
+section {
+  scroll-margin-top: 70px; /* Adjust based on header height */
+}
+
+/* Card transition hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+}
 /* Gallery Section */
 #gallery {
     padding: 50px 0;
