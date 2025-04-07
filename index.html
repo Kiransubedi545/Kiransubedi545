@@ -68,91 +68,118 @@
   <div class="container-fluid">
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
-    <!-- Horizontal Scrollable Projects Wrapper -->
-    <div class="d-flex flex-row overflow-auto py-4 px-2" style="gap: 1rem;">
+    <!-- Horizontal Slider -->
+    <div id="projectSlider" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-      <!-- ML Projects -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <div class="card-body">
-          <h2 class="section-heading text-uppercase text-secondary mb-4">💻 Machine Learning Projects and Application Development</h2>
-          <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
-          <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
-          <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
-        </div>
-      </div>
-
-      <!-- COVID-19 Impact -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <img src="project2.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h2>Impact of COVID-19 Pandemic on Road and Bridge Projects under Road Division Pokhara.</h2>
-          <p>COVID-19 is a global pandemic that has caused social disruption and altered the global economic perspective... [truncated]</p>
-          <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
-        </div>
-      </div>
-
-      <!-- Seismic Analysis -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <img src="project1.jpg" class="card-img-top" alt="Project 2">
-        <div class="card-body">
-          <h2>Seismic Analysis and Design of Earthquake Resistance Structural Building</h2>
-          <p>This project work was intended to learn the structural analysis and seismic resistant design of Residential building... [truncated]</p>
-          <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
-          <div class="mt-3">
-            <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#seismicGallery">View Images</button>
-            <div class="collapse mt-2" id="seismicGallery">
-              <div class="d-flex flex-wrap justify-content-center gap-2">
-                <img src="1.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="2.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="3.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="4.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="5.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="6.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="7.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="8.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="9.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="10.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="11.bmp" class="img-thumbnail" style="width: 80px;">
-                <img src="12.bmp" class="img-thumbnail" style="width: 80px;">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <div class="card-body">
+                <h2 class="section-heading text-uppercase text-secondary mb-4">💻 Machine Learning Projects and Application Development</h2>
+                <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
+                <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
+                <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Smart Pavements -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
-        <div class="card-body">
-          <h2>Transforming Road Infrastructure: The Rise of Smart Pavements 🌍</h2>
-          <p>As we venture into an era defined by technological innovation... [truncated]</p>
-          <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <img src="project2.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h2>Impact of COVID-19 Pandemic on Road and Bridge Projects under Road Division Pokhara.</h2>
+                <p>COVID-19 is a global pandemic that has caused social disruption and altered the global economic perspective... [truncated]</p>
+                <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Crash Data -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
-        <div class="card-body">
-          <h2>Chicago Crash Data Analysis</h2>
-          <p>In 2024, traffic crashes across Chicago’s city streets were closely examined... [truncated]</p>
-          <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <img src="project1.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h2>Seismic Analysis and Design of Earthquake Resistance Structural Building</h2>
+                <p>This project work was intended to learn the structural analysis and seismic resistant design of Residential building... [truncated]</p>
+                <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                <div class="mt-3">
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#seismicGallery">View Images</button>
+                  <div class="collapse mt-2" id="seismicGallery">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                      <img src="1.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="2.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="3.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="4.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="5.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="6.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="7.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="8.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="9.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="10.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="11.bmp" class="img-thumbnail" style="width: 80px;">
+                      <img src="12.bmp" class="img-thumbnail" style="width: 80px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <!-- Ongoing Projects -->
-      <div class="card flex-shrink-0" style="min-width: 320px;">
-        <img src="project.jpg" class="card-img-top" alt="Future Project ">
-        <div class="card-body">
-          <h2>Ongoing Projects....</h2>
-          <p>Projects are coming soon...........</p>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
+              <div class="card-body">
+                <h2>Transforming Road Infrastructure: The Rise of Smart Pavements 🌍</h2>
+                <p>As we venture into an era defined by technological innovation... [truncated]</p>
+                <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
+              <div class="card-body">
+                <h2>Chicago Crash Data Analysis</h2>
+                <p>In 2024, traffic crashes across Chicago’s city streets were closely examined... [truncated]</p>
+                <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card mx-2" style="width: 320px;">
+              <img src="project.jpg" class="card-img-top" alt="Future Project ">
+              <div class="card-body">
+                <h2>Ongoing Projects....</h2>
+                <p>Projects are coming soon...........</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 </section>
-
 <section id="gallery" class="bg-light text-center py-5">
     <div class="container">
         <h2 class="section-heading text-uppercase text-secondary mb-0">Gallery</h2>
