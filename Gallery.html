@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .carousel-caption p {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <section id="gallery" class="text-center py-5">
+    <div class="container">
+      <h2 class="section-heading text-uppercase text-secondary mb-4">Gallery</h2>
+      <p class="text-muted mb-5">A collection of photographs during work execution and on-site issues.</p>
+
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="CUBE.jpg" class="img-thumbnail" alt="CUBE Testing">
+                <p class="mt-2">CUBE Testing</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="DCPT.jpg" class="img-thumbnail" alt="DCPT">
+                <p class="mt-2">DCPT</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="Str.jpg" class="img-thumbnail" alt="Drawings">
+                <p class="mt-2">Drawings</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="Equipment.jpg" class="img-thumbnail" alt="Equipment">
+                <p class="mt-2">Equipment</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="Rebar.jpg" class="img-thumbnail" alt="Rebar Details">
+                <p class="mt-2">Rebar Details</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="aggregate.jpg" class="img-thumbnail" alt="Aggregate">
+                <p class="mt-2">Aggregate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="const.jpg" class="img-thumbnail" alt="Construction">
+                <p class="mt-2">Construction</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="density.jpg" class="img-thumbnail" alt="Density Testing">
+                <p class="mt-2">Density Testing</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="gab.jpg" class="img-thumbnail" alt="Gabion Work">
+                <p class="mt-2">Gabion Work</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="gabion.jpg" class="img-thumbnail" alt="Gabion Wall">
+                <p class="mt-2">Gabion Wall</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="pav.jpg" class="img-thumbnail" alt="Pavement">
+                <p class="mt-2">Pavement</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="Rigid Pavement.jpg" class="img-thumbnail" alt="Rigid Pavement">
+                <p class="mt-2">Rigid Pavement</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
