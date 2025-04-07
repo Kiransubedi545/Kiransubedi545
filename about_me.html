@@ -11,12 +11,13 @@
         padding: 0;
         height: 100%;
         overflow-x: hidden;
-        color: #fff;
+        color: #000;
+        background-color: #fff;
       }
       .top-slider {
         position: relative;
         width: 100%;
-        height: 33vh;
+        height: 66vh;
         overflow: hidden;
       }
       .top-slider img {
@@ -26,7 +27,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(0.7); /* Remove blur, increase brightness */
+        filter: brightness(0.85);
         transition: opacity 1s ease-in-out;
         opacity: 0;
       }
@@ -34,24 +35,28 @@
         opacity: 1;
       }
       .about-overlay {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: transparent;
         padding: 2rem;
         border-radius: 10px;
       }
       .text-muted {
-        color: #f1f1f1 !important;
+        color: #333 !important;
       }
     </style>
 </head>
 <body>
+  <div class="top-slider">
+    <img src="https://kiransubedi545.com.np/Highway.png" class="active" alt="Highway Background">
+    <img src="https://kiransubedi545.com.np/Bridges.jpg" alt="Bridge Background">
+  </div>
+
   <section id="about" class="text-center py-5">
     <div class="container about-overlay">
-      <h2 class="section-heading text-uppercase text-light mb-4">About Me</h2>
-
           <div class="top-slider">
     <img src="https://kiransubedi545.com.np/Highway.png" class="active" alt="Highway Background">
     <img src="https://kiransubedi545.com.np/Bridges.jpg" alt="Bridge Background">
   </div>
+      <h2 class="section-heading text-uppercase text-dark mb-4">About Me</h2>
       <p class="text-muted">
         I am a civil engineer with a passion for solving complex engineering challenges through data-driven insights and cutting-edge technologies. My extensive hands-on experience spans a wide range of research projects, from pavement engineering to infrastructure risk management, where I have developed a strong foundation in combining technical expertise with innovative solutions. I specialize in applying programming, machine learning, signal processing, and advanced data analytics to improve civil infrastructure systems, contributing to enhanced efficiency, safety, and sustainability.
       </p>
@@ -63,7 +68,6 @@
       </p>
     </div>
   </section>
-
 
   <script>
     const sliderImages = document.querySelectorAll('.top-slider img');
