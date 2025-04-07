@@ -84,14 +84,19 @@
               <img src="project2.jpg" class="card-img-top" alt="Impact analysis">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 on road and bridge projects</h2>
-                <p>COVID-19 disrupted construction in Nepal. Based on 52 respondents, major impacts include transport shutdowns and labor shortages...</p>
-                <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
+                <p>COVID-19 disrupted construction in Nepal, impacting transportation and labor availability...</p>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#covidModal">📖 Read More</button>
               </div>
             </div>
 
-            <!-- Seismic Analysis Card with Carousel and Modal -->
+            <!-- Seismic Analysis Card with Modal -->
             <div class="card" style="width: 320px;">
-              <!-- Mini Image Carousel -->
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-3" style="font-size: 18px;">Seismic analysis of earthquake-resistant building</h2>
+                <p>Structural analysis and seismic design using SAP2000. Learn about joint behavior and reinforcement requirements...</p>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#seismicModal">📖 Read More</button>
+              </div>
+              <!-- Mini Image Carousel moved below description -->
               <div id="seismicCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active"><img src="1.bmp" class="d-block w-100" alt="Seismic Image 1"></div>
@@ -116,11 +121,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-3" style="font-size: 18px;">Seismic analysis of earthquake-resistant building</h2>
-                <p>Structural analysis and seismic design using SAP2000. Learn about joint behavior and reinforcement requirements...</p>
-                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#seismicModal">📖 Read More</button>
-              </div>
             </div>
 
           </div>
@@ -135,8 +135,8 @@
               <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: Smart pavements 🌍</h2>
-                <p>Explores self-healing surfaces, energy harvesting, smart sensors, bio-binders and sustainable pavement types...</p>
-                <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                <p>From HMA to self-healing asphalt, this project explores sustainable and tech-driven road solutions...</p>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#pavementModal">📖 Read More</button>
               </div>
             </div>
 
@@ -145,8 +145,8 @@
               <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
               <div class="card-body">
                 <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
-                <p>Analysis of 900,000+ traffic crashes in Chicago using Python. Clear weather and driver behavior as top contributors...</p>
-                <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                <p>Uncovering insights from 900k+ crashes using Python: timing, weather, and control deficiencies...</p>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#crashModal">📖 Read More</button>
               </div>
             </div>
 
@@ -177,7 +177,7 @@
   </div>
 </section>
 
-<!-- Modal for Full Seismic Description -->
+<!-- Modal for Seismic Description -->
 <div class="modal fade" id="seismicModal" tabindex="-1" aria-labelledby="seismicModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -188,10 +188,67 @@
       <div class="modal-body text-start">
         <p>This project work was intended to learn the structural analysis and seismic resistant design of Residential building. It was mainly based on the structural analysis using SAP-2000 and manual design of structural elements for the analysis using different design codes as per requirement.</p>
         <p>In the analysis, the negative moment in beam was greater than the positive moment. Under-reinforced design led to high top reinforcement near joints due to seismic load considerations. Column criticality was studied for periphery vs. central portions under different loading conditions.</p>
-        <p>The demand of reinforcement reduces along with increasing storey height. Due to time limitations, only critical members are shown in detail.</p>
+        <p>The demand of reinforcement reduces along with increasing storey height. Limitations: only critical members are shown in detail.</p>
       </div>
       <div class="modal-footer">
         <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for COVID Description -->
+<div class="modal fade" id="covidModal" tabindex="-1" aria-labelledby="covidModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="covidModalLabel">Impact of COVID-19 on Road Projects</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start">
+        <p>COVID-19 is a global pandemic that has caused social disruption and altered the global economic perspective. The construction sector plays an essential role in the worldwide economy, drawing upon a diverse array of resources within regional economies...</p>
+      </div>
+      <div class="modal-footer">
+        <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Pavement Description -->
+<div class="modal fade" id="pavementModal" tabindex="-1" aria-labelledby="pavementModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pavementModalLabel">Smart Pavement Innovation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start">
+        <p>The evolution of road infrastructure is increasingly driven by the need for sustainability, resilience, and intelligent systems. This study explores the transformative shift from traditional flexible pavements to advanced smart pavement technologies...</p>
+      </div>
+      <div class="modal-footer">
+        <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Crash Analysis -->
+<div class="modal fade" id="crashModal" tabindex="-1" aria-labelledby="crashModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="crashModalLabel">Chicago Crash Data Analysis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start">
+        <p>In 2024, over 900,000 traffic crashes in Chicago were analyzed using CPD data and Python-based tools to uncover key trends and safety challenges...</p>
+      </div>
+      <div class="modal-footer">
+        <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Open Full Report <i class="fas fa-file-pdf"></i></a>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
@@ -203,7 +260,6 @@
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 </style>
-
 		   
 <!-- Gallery Section Slider -->
 <section id="gallery" class="bg-light text-center py-5">
