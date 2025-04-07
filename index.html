@@ -68,13 +68,13 @@
   <div class="container-fluid">
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
-    <!-- Continuous horizontal slider for 3 projects at a time -->
+    <!-- Continuous horizontal slider for 3 projects at a time with pause and loop -->
     <div class="overflow-hidden position-relative">
-      <div class="d-flex" id="projectScroll" style="width: max-content; animation: scrollProjects 48s linear infinite;">
-        <!-- Each project card (repeated) -->
+      <div class="d-flex" id="projectScroll">
+        <!-- Each project card (use original names with consistent title case) -->
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">💻 Machine Learning Projects and Application Development</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">💻 Machine learning projects and application development</h2>
             <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
             <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
             <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
@@ -83,7 +83,7 @@
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <img src="project2.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">Impact of COVID-19 on Road & Bridge Projects</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
             <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
             <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
           </div>
@@ -91,7 +91,7 @@
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <img src="project1.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">Seismic Analysis and Structural Design</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
             <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
             <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
           </div>
@@ -99,7 +99,7 @@
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">Smart Pavements: The Future of Roads 🌍</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">Transforming road infrastructure: The rise of smart pavements 🌍</h2>
             <p>Self-healing surfaces, energy harvesting, and smart sensors are transforming road infrastructure. A look at sustainable, tech-enabled pavements.</p>
             <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
           </div>
@@ -107,7 +107,7 @@
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">Chicago Crash Data Analysis</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">Chicago crash data analysis</h2>
             <p>Analyzing over 900,000 traffic crashes reveals that clear weather contributes to more accidents than expected. A call for better driver awareness and road safety.</p>
             <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
           </div>
@@ -115,7 +115,7 @@
         <div class="card m-2" style="width: 320px; flex-shrink: 0;">
           <img src="project.jpg" class="card-img-top" alt="Future Project">
           <div class="card-body">
-            <h2 class="section-heading text-uppercase text-secondary mb-4">Ongoing Projects</h2>
+            <h2 class="section-heading text-uppercase text-secondary mb-4">Ongoing projects....</h2>
             <p>Projects are coming soon...</p>
           </div>
         </div>
@@ -123,9 +123,19 @@
     </div>
 
     <style>
-      @keyframes scrollProjects {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-1920px); } /* Adjust total width depending on cards */
+      @keyframes scrollProjectsStep {
+        0%, 8.3% { transform: translateX(0); }
+        16.6%, 24.9% { transform: translateX(-320px); }
+        33.2%, 41.5% { transform: translateX(-640px); }
+        49.8%, 58.1% { transform: translateX(-960px); }
+        66.4%, 74.7% { transform: translateX(-1280px); }
+        83%, 91.3% { transform: translateX(-1600px); }
+        100% { transform: translateX(0); }
+      }
+      #projectScroll {
+        width: max-content;
+        display: flex;
+        animation: scrollProjectsStep 56s ease-in-out infinite;
       }
     </style>
   </div>
