@@ -19,32 +19,38 @@
         width: 100%;
         min-height: 100vh;
         z-index: -1;
-        display: block;
-        pointer-events: none;
+        display: flex;
+        flex-direction: row;
       }
       .bg-slider img {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
         filter: brightness(0.4) blur(4px);
         transition: opacity 1s ease-in-out;
         opacity: 0;
-        display: block;
       }
       .bg-slider img.active {
         opacity: 1;
+      }
+      .about-overlay {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 2rem;
+        border-radius: 10px;
       }
     </style>
 </head>
 <body>
   <div class="bg-slider">
-    <img src="Highway.png" class="active" alt="Highway Background">
-    <img src="Bridges.jpg" alt="Bridge Background">
+    <img src="./Highway.png" class="active" alt="Highway Background">
+    <img src="./Bridges.jpg" alt="Bridge Background">
   </div>
 
-  <section id="about" class="bg-light text-center py-5">
-    <div class="container">
+  <section id="about" class="text-center py-5">
+    <div class="container about-overlay">
       <h2 class="section-heading text-uppercase text-secondary mb-4">About Me</h2>
       <img src="Surveying.jpg" alt="During Surveying" class="img-fluid rounded-circle mb-4" style="width: 150px; height: 150px;">
       <p class="text-muted">
