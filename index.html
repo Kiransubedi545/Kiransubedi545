@@ -63,61 +63,73 @@
   <div class="container-fluid">
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
-    <!-- Carousel for 3 visible projects at a time with smooth transition -->
+    <!-- Carousel for projects (1 visible on mobile, 3 on desktop) -->
     <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
-            <div class="card" style="width: 320px;">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
-                <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
-                <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
-                <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
+          <div class="row justify-content-center transition-transform">
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
+                  <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
+                  <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
+                  <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 320px;">
-              <img src="project2.jpg" class="card-img-top" alt="Project 1">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
-                <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
-                <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <img src="project2.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
+                  <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
+                  <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 320px;">
-              <img src="project1.jpg" class="card-img-top" alt="Project 2">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
-                <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
-                <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <img src="project1.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
+                  <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
+                  <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="carousel-item">
-          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
-            <div class="card" style="width: 320px;">
-              <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: The rise of smart pavements 🌍</h2>
-                <p>Self-healing surfaces, energy harvesting, and smart sensors are transforming road infrastructure. A look at sustainable, tech-enabled pavements.</p>
-                <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+          <div class="row justify-content-center transition-transform">
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: The rise of smart pavements 🌍</h2>
+                  <p>Self-healing surfaces, energy harvesting, and smart sensors are transforming road infrastructure. A look at sustainable, tech-enabled pavements.</p>
+                  <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 320px;">
-              <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
-                <p>Analyzing over 900,000 traffic crashes reveals that clear weather contributes to more accidents than expected. A call for better driver awareness and road safety.</p>
-                <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
+                  <p>Analyzing over 900,000 traffic crashes reveals that clear weather contributes to more accidents than expected. A call for better driver awareness and road safety.</p>
+                  <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+                </div>
               </div>
             </div>
-            <div class="card" style="width: 320px;">
-              <img src="project.jpg" class="card-img-top" alt="Future Project">
-              <div class="card-body">
-                <h2 class="section-heading text-secondary mb-4">Ongoing projects....</h2>
-                <p>Projects are coming soon...</p>
+            <div class="col-10 col-sm-6 col-lg-4 mb-3">
+              <div class="card h-100">
+                <img src="project.jpg" class="card-img-top" alt="Future Project">
+                <div class="card-body">
+                  <h2 class="section-heading text-secondary mb-4">Ongoing projects....</h2>
+                  <p>Projects are coming soon...</p>
+                </div>
               </div>
             </div>
           </div>
@@ -138,8 +150,10 @@
 </section>
 
 <style>
-  .carousel-item {
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  @media (max-width: 768px) {
+    #projects .card {
+      width: 100% !important;
+    }
   }
 </style>
 		   
