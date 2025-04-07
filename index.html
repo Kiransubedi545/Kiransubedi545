@@ -63,126 +63,85 @@
   <div class="container-fluid">
     <h2 class="section-heading text-uppercase text-secondary mb-0">My Projects</h2>
 
-    <!-- Custom smooth horizontal scroll with infinite loop -->
-    <div class="project-slider overflow-hidden position-relative">
-      <div class="project-track d-flex">
-        <!-- Project Cards Repeated for Infinite Effect -->
-        <div class="project-card card mx-2" style="width: 320px;">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
-            <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
-            <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
-            <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
+    <!-- Carousel for 3 visible projects at a time with smooth transition -->
+    <div id="projectCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
+            <div class="card" style="width: 320px;">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
+                <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
+                <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
+                <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
+              </div>
+            </div>
+            <div class="card" style="width: 320px;">
+              <img src="project2.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
+                <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
+                <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
+              </div>
+            </div>
+            <div class="card" style="width: 320px;">
+              <img src="project1.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
+                <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
+                <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="project2.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
-            <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
-            <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="project1.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
-            <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
-            <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: The rise of smart pavements 🌍</h2>
-            <p>Self-healing surfaces, energy harvesting, and smart sensors are transforming road infrastructure. A look at sustainable, tech-enabled pavements.</p>
-            <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
-            <p>Analyzing over 900,000 traffic crashes reveals that clear weather contributes to more accidents than expected. A call for better driver awareness and road safety.</p>
-            <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="project.jpg" class="card-img-top" alt="Future Project">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Ongoing projects....</h2>
-            <p>Projects are coming soon...</p>
-          </div>
-        </div>
-        <!-- Duplicate first 3 to loop smoothly -->
-        <div class="project-card card mx-2" style="width: 320px;">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">💻 Machine learning projects and application development</h2>
-            <img src="ML_Cover_Image.jpg" class="img-fluid rounded shadow mb-3" />
-            <p>Explore hands-on machine learning applications built to solve real-world engineering and infrastructure problems.</p>
-            <a href="ML_Projects.html" target="_blank" class="btn btn-primary">🔗 Open ML Projects Page</a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="project2.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Impact of COVID-19 pandemic on road and bridge projects under road division Pokhara.</h2>
-            <p>COVID-19 has disrupted the construction sector in Nepal. This study identifies the top pandemic-related impacts on infrastructure development projects...</p>
-            <a href="Covid-19 Impact.pdf" target="_blank" class="btn btn-primary">Read More <i class="fas fa-file-pdf"></i></a>
-          </div>
-        </div>
-        <div class="project-card card mx-2" style="width: 320px;">
-          <img src="project1.jpg" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h2 class="section-heading text-secondary mb-4">Seismic analysis and design of earthquake resistance structural building</h2>
-            <p>Structural design for earthquake resistance using SAP2000. Key insights on negative moments, joint reinforcement, and seismic behavior of beams and columns.</p>
-            <a href="Seismic Analysis Report.pdf" target="_blank" class="btn btn-primary">Read More</a>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center flex-wrap gap-3 transition-transform">
+            <div class="card" style="width: 320px;">
+              <img src="Transformation_of_Pavement.jpg" class="card-img-top" alt="Smart Pavements">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">Transforming road infrastructure: The rise of smart pavements 🌍</h2>
+                <p>Self-healing surfaces, energy harvesting, and smart sensors are transforming road infrastructure. A look at sustainable, tech-enabled pavements.</p>
+                <a href="Transformation of Pavement.pdf" target="_blank" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 320px;">
+              <img src="Heatmapping_data.png" class="card-img-top" alt="Crash Data">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">Chicago crash data analysis</h2>
+                <p>Analyzing over 900,000 traffic crashes reveals that clear weather contributes to more accidents than expected. A call for better driver awareness and road safety.</p>
+                <a href="Chicago Crash Data Analysis.pdf" target="_blank" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <div class="card" style="width: 320px;">
+              <img src="project.jpg" class="card-img-top" alt="Future Project">
+              <div class="card-body">
+                <h2 class="section-heading text-secondary mb-4">Ongoing projects....</h2>
+                <p>Projects are coming soon...</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Navigation -->
-    <div class="text-center mt-3">
-      <button id="prevProject" class="btn btn-outline-dark me-2">&#10094;</button>
-      <button id="nextProject" class="btn btn-outline-dark">&#10095;</button>
+      <!-- Manual controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 </section>
 
 <style>
-  .project-slider {
-    width: 100%;
-    overflow: hidden;
-  }
-  .project-track {
-    display: flex;
-    animation: scrollProjects 48s linear infinite;
-  }
-  @keyframes scrollProjects {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+  .carousel-item {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
 </style>
-
-<script>
-  const track = document.querySelector('.project-track');
-  const prevBtn = document.getElementById('prevProject');
-  const nextBtn = document.getElementById('nextProject');
-
-  let scrollAmount = 0;
-  const cardWidth = 340; // card width + margin
-
-  nextBtn.addEventListener('click', () => {
-    scrollAmount += cardWidth;
-    track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-  });
-
-  prevBtn.addEventListener('click', () => {
-    scrollAmount -= cardWidth;
-    track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-  });
-</script>
 		   
 <!-- Gallery Section Slider -->
 <section id="gallery" class="bg-light text-center py-5">
