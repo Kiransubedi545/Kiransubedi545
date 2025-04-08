@@ -36,7 +36,22 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
+/* Maintain consistent masthead color across all pages */
+header.masthead {
+  background-color: #65B89E !important;
+}
 
+/* Large name text for masthead */
+.masthead-heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Optional: subtitle styling under the name */
+.masthead-subheading {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
 *,
 *::before,
 *::after {
