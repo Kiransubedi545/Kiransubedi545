@@ -36,41 +36,24 @@
         <!-- Masthead-->
 	    
   <!-- Elegant Top Nav -->
-  <!-- Desktop Navbar -->
-  <div class="navbar-container">
-    <div class="navbar-inner">
-      <a href="#home">Home</a>
-      <a href="about_me.html">About</a>
-      <a href="#projects">Projects</a>
-      <a href="Gallery.html">Gallery</a>
-      <a href="#blogs">Blogs</a>
-      <a href="contact.html">Contact</a>
-      <a href="resume.html">Curriculum Vitae</a>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler text-black border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 justify-content-center w-100">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
 
-  <!-- Mobile Header -->
-  <div class="mobile-header">
-    <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
-  </div>
-
-  <!-- Sidebar -->
-  <div id="sidebar" class="sidebar">
-    <a href="#home">Home</a>
-    <a href="about_me.html">About</a>
-    <a href="#projects">Projects</a>
-    <a href="Gallery.html">Gallery</a>
-    <a href="#blogs">Blogs</a>
-    <a href="contact.html">Contact</a>
-    <a href="resume.html">Curriculum Vitae</a>
-  </div>
-
-  <!-- Script for toggle -->
-  <script>
-    function toggleSidebar() {
-      document.getElementById('sidebar').classList.toggle('active');
-    }
-  </script>
 
 
 
