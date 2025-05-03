@@ -203,41 +203,47 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* NAVBAR Styles */
-.custom-navbar {
+/* Push content down below fixed nav */
+body {
+  padding-top: 60px;
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Clean top nav bar with pattern and your color */
+.main-navbar {
   background-color: #65B89E;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
-  background-size: 18px 18px;
-  min-height: 45px;
-  padding: 0.2rem 0.5rem;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 8px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1030;
 }
 
-.custom-navbar .nav-link {
-  color: #fff;
+/* Nav styling */
+.navbar .nav-pills {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #ffffff !important;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: border-bottom 0.3s ease, color 0.3s ease;
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
 
-/* Highlight on hover and active */
-.custom-navbar .nav-link:hover,
-.custom-navbar .nav-link:focus,
-.custom-navbar .nav-link.active {
-  color: #fff;
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff;
   border-bottom: 2px solid white;
-  background-color: transparent !important; /* prevent any background highlight */
+  background-color: transparent !important;
 }
 
-/* Scrollable on smaller screens */
-.navbar-nav {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.nav-link.active {
+  border-bottom: 2px solid white;
+  background-color: transparent !important;
 }
 
-.navbar-nav .nav-item {
-  white-space: nowrap;
-}
 
 
 <div class="container">
