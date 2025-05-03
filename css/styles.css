@@ -203,8 +203,15 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+/* Compact, sticky, and stylish navbar */
+.custom-navbar {
+  background-color: #65B89E;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 18px 18px;
+  padding: 0.3rem 1rem;
+}
 
-/* Navbar styles for horizontal scrolling on mobile */
+/* Keep all nav items in one row and scrollable on small screens */
 .navbar-nav {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -214,6 +221,11 @@ nav ul li a:hover {
 .navbar-nav .nav-item {
   white-space: nowrap;
 }
+
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5);
+}
+
 
 <div class="container">
     <div class="row">
