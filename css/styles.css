@@ -203,40 +203,34 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Final full-width slim navbar */
+/* Main responsive navbar style */
 .custom-navbar {
   background-color: #65B89E;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 20px 20px;
-  width: 100%;
   height: 35px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
-.custom-navbar .nav {
-  width: 100%;
+.navbar-nav {
+  flex-wrap: wrap;
 }
 
-.custom-navbar .nav-item {
-  flex: 1;
-  text-align: center;
+.navbar-toggler {
+  padding: 2px 6px;
+  font-size: 1rem;
+  line-height: 1;
 }
 
+/* Nav link base style */
 .custom-navbar .nav-link {
-  color: #fff;
-  padding: 5px 0;
-  font-size: 0.95rem;
-  font-weight: 500;
+  color: white !important;
+  font-size: 0.9rem;
+  padding: 5px 10px;
   transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
-}
-
-.custom-navbar .nav-link:hover,
-.custom-navbar .nav-link.active {
-  border-bottom: 2px solid white;
+  text-align: center;
 }
 
 
