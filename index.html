@@ -36,27 +36,41 @@
         <!-- Masthead-->
 	    
   <!-- Elegant Top Nav -->
-  <nav class="navbar navbar-expand-md custom-navbar fixed-top">
-    <div class="container-fluid px-3">
-      <!-- Toggle button for mobile -->
-      <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav items -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-        <ul class="navbar-nav custom-nav-list">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about_me.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Curriculum Vitae</a></li>
-        </ul>
-      </div>
+  <!-- Desktop Navbar -->
+  <div class="navbar-container">
+    <div class="navbar-inner">
+      <a href="#home">Home</a>
+      <a href="about_me.html">About</a>
+      <a href="#projects">Projects</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="#blogs">Blogs</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume.html">Curriculum Vitae</a>
     </div>
-  </nav>
+  </div>
+
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <a href="#home">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="#blogs">Blogs</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Curriculum Vitae</a>
+  </div>
+
+  <!-- Script for toggle -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
 
 
 
