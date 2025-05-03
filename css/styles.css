@@ -200,32 +200,24 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #84BFA9;
-  z-index: 1000;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #84BFA9 !important;
+  z-index: 999;
 }
 
-/* Nav List */
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-/* Nav Items */
-nav ul li {
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-/* Nav Links */
 nav ul li a {
   display: block;
-  color: white;
-  text-decoration: none;
   padding: 16px 20px;
+  color: white !important;
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   transition: border-bottom 0.3s;
@@ -235,6 +227,10 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 2px solid white;
 }
+
+
+
+
 
 /* Optional: Responsive Shrink */
 @media (max-width: 768px) {
