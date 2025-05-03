@@ -185,41 +185,42 @@ body {
   padding-top: 60px; /* Adjust for fixed nav */
 }
 
-/* Navigation Menu Styling */
+/* Navigation Bar Styling */
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    background-color: #2c2c2c; /* Updated from #333 to darker background */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #2c2c2c;
 }
 
 nav ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white !important; /* Ensures white text */
-    padding: 10px 15px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: white !important;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    color: white !important; /* Keeps text white on hover */
+  background-color: #555;
+  color: white !important;
 }
 
-/* Navbar styles for horizontal scrolling on mobile */
+/* Mobile horizontal scroll */
 .navbar-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navbar-nav .nav-item {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 <div class="container">
