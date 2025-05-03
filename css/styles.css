@@ -203,15 +203,32 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Compact, sticky, and stylish navbar */
+/* NAVBAR Styles */
 .custom-navbar {
   background-color: #65B89E;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 18px 18px;
-  padding: 0.3rem 1rem;
+  min-height: 45px;
+  padding: 0.2rem 0.5rem;
 }
 
-/* Keep all nav items in one row and scrollable on small screens */
+.custom-navbar .nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+/* Highlight on hover and active */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link.active {
+  color: #fff;
+  border-bottom: 2px solid white;
+  background-color: transparent !important; /* prevent any background highlight */
+}
+
+/* Scrollable on smaller screens */
 .navbar-nav {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -220,10 +237,6 @@ nav ul li a:hover {
 
 .navbar-nav .nav-item {
   white-space: nowrap;
-}
-
-.navbar-toggler {
-  border-color: rgba(255,255,255,0.5);
 }
 
 
