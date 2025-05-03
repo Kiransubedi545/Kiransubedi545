@@ -185,32 +185,87 @@ body {
   padding-top: 60px; /* Adjust for fixed nav */
 }
 
-/* Navigation Bar Styling */
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #65B89E;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white !important;
-  padding: 10px 15px;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: #555;
-  color: white !important;
-}
+/* Navigation Menu Styling */
+ nav ul {
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+     padding: 0;
+     background-color: #333;
+ }
+ 
+ nav ul li {
+     margin: 0 10px;
+ }
+ 
+ nav ul li a {
+     text-decoration: none;
+     color: white;
+     padding: 10px 15px;
+     font-size: 1rem;
+     transition: background-color 0.3s;
+ }
+ 
+ nav ul li a:hover {
+     background-color: #555;
+ }
+ <div class="container">
+     <div class="row">
+         <div class="col-md-4">
+             <h3>Column 1</h3>
+             <p>Content for the first column.</p>
+         </div>
+         <div class="col-md-4">
+             <h3>Column 2</h3>
+             <p>Content for the second column.</p>
+         </div>
+         <div class="col-md-4">
+             <h3>Column 3</h3>
+             <p>Content for the third column.</p>
+         </div>
+     </div>
+ </div>
+ abbr[title],
+ abbr[data-bs-original-title] {
+   -webkit-text-decoration: underline dotted;
+           text-decoration: underline dotted;
+   cursor: help;
+   -webkit-text-decoration-skip-ink: none;
+           text-decoration-skip-ink: none;
+ }
+ 
+ address {
+   margin-bottom: 1rem;
+   font-style: normal;
+   line-height: inherit;
+ }
+ 
+ ol,
+ ul li {
+   list-style: none;
+   display: inline-block;
+   float: left;
+   line-height: 100px;
+ }
+ ul li a{
+   display: block;
+   text-decoration: none;
+   font-size: 14px;
+   font-family: arial;
+   color: #1e1e1e;
+   padding: 0 20px;
+ }
+ .nav-links ul li::after{
+ content: '':
+ width:0%
+ height:2px;
+ background:#f44336;
+ display:block;
+ margin: auto;
+ }
+ .nav-links ul li:hover::after{
+ width:100%;
+ },
 
 /* Mobile horizontal scroll */
 .navbar-nav {
@@ -221,7 +276,7 @@ nav ul li a:hover {
 
 .navbar-nav .nav-item {
   white-space: nowrap;
-}
+},
 
 <div class="container">
     <div class="row">
