@@ -204,36 +204,101 @@ nav ul li a:hover {
 }
 
 /* Navbar base styling */
-.custom-navbar {
+/* Base Navbar Styles */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   background-color: #65B89E;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 20px 20px;
-  min-height: 35px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  z-index: 1000;
 }
 
-/* Nav link style */
-.custom-navbar .nav-link {
-  color: white !important;
-  padding: 6px 12px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: border-bottom 0.3s ease;
-  border-bottom: 2px solid transparent;
-  text-align: center;
+.navbar-inner {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.custom-navbar .nav-link:hover,
-.custom-navbar .nav-link.active {
+.navbar-inner a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: border-bottom 0.3s;
+}
+
+.navbar-inner a:hover {
   border-bottom: 2px solid white;
 }
 
-/* Ensure nav is evenly spaced on desktop */
-@media (min-width: 768px) {
-  .custom-nav-list {
+/* Mobile Sidebar */
+.mobile-header {
+  display: none;
+  background-color: #65B89E;
+  padding: 10px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #65B89E;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: block;
+  background: white;
+  color: #333;
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive Rules */
+@media (max-width: 1023px) {
+  .navbar-inner {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    position: fixed;
     width: 100%;
-    justify-content: space-around;
+    top: 0;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar, .mobile-header {
+    display: none;
   }
 }
 
