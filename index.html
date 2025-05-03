@@ -36,19 +36,31 @@
         <!-- Masthead-->
 	    
   <!-- Elegant Top Nav -->
-  <nav>
-    <ul>
-        <li class="nav-item"><a class="nav-link" href="index.html">  Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about_me.html">   About</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">   Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">   Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="blogs.html">   Blogs</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">   Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume.html">   Curriculum Vitae</a></li>
-      </ul>
-    </div>
+  <!-- Desktop Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_me.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Curriculum Vitae</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div class="sidebar" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about_me.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Curriculum Vitae</a>
   </div>
-</nav>
+
 
 
 
