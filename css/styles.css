@@ -267,17 +267,6 @@ body {
  width:100%;
  },
 
-/* Mobile horizontal scroll */
-.navbar-nav {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.navbar-nav .nav-item {
-  white-space: nowrap;
-},
-
 <div class="container">
     <div class="row">
         <div class="col-md-4">
